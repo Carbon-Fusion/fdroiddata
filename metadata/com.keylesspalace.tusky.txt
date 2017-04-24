@@ -1,40 +1,18 @@
-AntiFeatures:UpstreamNonFree
-Categories:Internet
-License:GPL-3.0
-Web Site:https://mastodon.social/
+AntiFeatures:Tracking,UpstreamNonFree
+Categories:None
+License:GPL3
+Web Site:https://tusky.keylesspalace.com/
 Source Code:https://github.com/Vavassor/Tusky
 Issue Tracker:https://github.com/Vavassor/Tusky/issues
-
-Auto Name:Tusky
-Summary:Share words, photos, and videos with others
+Name:Tusky
+Summary:Tusky
 Description:
-Tusky is a client for [https://mastodon.social/ Mastodon], a free and
-open-source social network server. Share words, photos, and videos with folks!
-
-Mastodon is decentralized, meaning anyone can run Mastodon and participate in
-the social network seamlessly.
+Tusky is a beautiful Android client for Mastodon. Mastodon is a GNU
+social-compatible federated social network. That means not one entity controls
+the whole network, rather, like e-mail, volunteers and organisations operate
+their own independent servers, users from which can all interact with each other
+seamlessly.
 .
 
-Repo Type:git
-Repo:https://github.com/Vavassor/Tusky
-
-Build:1.0.0-alpha.5,5
-    commit=v1.0.0-alpha.5
-    subdir=app
-    gradle=yes
-
-Build:1.0.0-alpha.7,7
-    commit=v1.0.0-alpha.7
-    subdir=app
-    gradle=yes
-
-Build:1.0.0-alpha.8,8
-    commit=v1.0.0-alpha.8
-    subdir=app
-    gradle=yes
-
-Archive Policy:0 versions
 Auto Update Mode:None
-Update Check Mode:Static
-Current Version:1.0.0-alpha.8
-Current Version Code:8
+Update Check Mode:None
