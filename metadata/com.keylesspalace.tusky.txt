@@ -1,4 +1,4 @@
-AntiFeatures:Tracking,UpstreamNonFree
+AntiFeatures:NonFreeNet
 Categories:None
 License:GPL3
 Web Site:https://tusky.keylesspalace.com/
@@ -12,6 +12,8 @@ social-compatible federated social network. That means not one entity controls
 the whole network, rather, like e-mail, volunteers and organisations operate
 their own independent servers, users from which can all interact with each other
 seamlessly.
+
+This apps rely on FireBird google push function. 
 .
 
 Auto Update Mode:None
