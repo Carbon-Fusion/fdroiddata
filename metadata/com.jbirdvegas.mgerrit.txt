@@ -1,0 +1,18 @@
+License:Apache v2
+Web Site:https://github.com/JBirdVegas/external_jbirdvegas_mGerrit
+Source Code:https://github.com/JBirdVegas/external_jbirdvegas_mGerrit
+Issue Tracker:https://github.com/JBirdVegas/external_jbirdvegas_mGerrit/issues
+Changelog:
+Summary:mGerrit
+Description:
+Gerrit instance viewer supporting the most popular Android ROMs. 
+View commits by status Reviewable (Open), Merged, Abandoned;
+Quickly and easily view commit message, author, owner, committer, files changed and approvals and more.
+Quickly view diffs in browser.
+Simple and easy to use UI makes casual gerrit code review change viewing enjoyable.
+Open source: https://github.com/aokp/external_jbirdvegas_mGerrit
+This app is included in the Android Open Kang Project (ROMControl > About > AOKP Code Review).
+Thanks AOKP translators for the translations! We have the best support community in Android!
+Simplified Chinese translations by YULIANGMAX and Czech translation by Petr Reznicek (kecinzer)
+.
+Name:mGerrit
