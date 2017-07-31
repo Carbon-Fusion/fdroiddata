@@ -8,87 +8,11 @@ Donate:http://www.videolan.org/contribute.html#money
 
 Auto Name:VLC
 Summary:Media player
+Name: VLC
 Description:
 Video and audio player that supports a wide range of formats, for both local and
 remote playback.
 .
 
-Repo Type:git
-Repo:https://code.videolan.org/videolan/vlc-android.git
-
-Build:2.0.6,12000605
-    disable=doesnt build anymore
-    commit=2.0.6
-    subdir=vlc-android
-    gradle=VanillaX86
-    srclibs=VLC@6689dcb
-    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
-        sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz && \
-        echo "3a753ea48d917945dd54a2d97de388aa06ca2eb1066cbfdc6652036349fe05a7  jpegsrc.v9a.tar.gz" > ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz.sha256 && \
-        cd ../vlc/contrib/tarballs/ && \
-        sha256sum -c jpegsrc.v9a.tar.gz.sha256
-    build=cd ../ && \
-        sed -i 's,http://download,https://download,g' compile.sh && \
-        ./compile.sh -a "x86" --release
-    ndk=r11c
-
-Build:2.1.4,12000609
-    disable=contrib make failed
-    commit=2.1.4
-    subdir=vlc-android
-    gradle=VanillaX86
-    srclibs=VLC@ed56521
-    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
-        mkdir -p gradle/wrapper/ && \
-        echo 'distributionUrl=https://services.gradle.org/distributions/gradle-3.4.1-bin.zip' > gradle/wrapper/gradle-wrapper.properties && \
-        sed -i -e '/signingConfigs/d' build.gradle
-    build=pushd ../vlc/extras/tools && \
-        ./bootstrap && \
-        popd && \
-        pushd ../vlc/contrib && \
-        mkdir native && \
-        pushd native && \
-        ../bootstrap && \
-        make && \
-        popd && \
-        popd && \
-        cd ../ && \
-        ./compile.sh -a "x86" && \
-        ./compile release
-    ndk=r14
-
-Maintainer Notes:
-Instructions and dependencies here: http://wiki.videolan.org/AndroidCompile
-see http://buildbot.videolan.org/builders /for version code scheme
-The VLC srclib commit can be found out from TESTED_HASH value in compile.sh
-
-For recommended versions of the build tools, see:
-https://git.videolan.org/?p=vlc.git;a=blob;f=extras/tools/bootstrap;h=e60e5ebf93e69e7bb731e80d0fbc6ebd1226dfdb;hb=HEAD#l73
-
-Actual versioncodes are:
-
-* Build:2.0.6,12000624 armv7
-* Build:2.0.6,12000625 x86
-* Build:2.0.6,12000626 mips
-* Build:2.0.6,12000627 armv8
-* Build:2.0.6,12000628 x86_64
-
-A last-resort update option if builds keep broken for a long time is to
-resign official apks:
-
-    commit=2.0.6
-    output=binary/vlc.apk
-    build=mkdir binary && \
-        cd binary && \
-        wget -c https://get.videolan.org/vlc-android/$$VERSION$$/VLC-Android-$$VERSION$$-x86_64.apk -O vlc.apk && \
-        unzip vlc.apk && \
-        rm -fR META-INF vlc.apk && \
-        zip -r vlc.apk *
-.
-
-Archive Policy:0 versions
 Auto Update Mode:None
-Update Check Mode:Static
-Current Version:2.0.6
-Current Version Code:12000605
+Update Check Mode:None
