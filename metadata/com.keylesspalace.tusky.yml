@@ -1,0 +1,20 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: Team Tusky
+AuthorEmail: tusky@connyduck.at
+WebSite: https://tusky.app/
+SourceCode: https://github.com/tuskyapp/Tusky
+IssueTracker: https://github.com/tuskyapp/Tusky/issues
+Translation: https://weblate.tusky.app/projects/tusky/
+Changelog: https://github.com/tuskyapp/Tusky/releases
+OpenCollective: tusky
+
+AutoName: Tusky
+
+RepoType: git
+Repo: https://github.com/tuskyapp/Tusky
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags ^v[\d.]+$
+UpdateCheckData: app/build.gradle|versionCode\s(\d+)|.|versionName\s"([\d.]+)"
