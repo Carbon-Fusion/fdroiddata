@@ -33,3 +33,13 @@ See the [Contributing](CONTRIBUTING.md) doc.
 ## More information
 
 You can find more details on [the manual](https://f-droid.org/manual/).
+
+### 'Automated' manual build accordingly to metadata : 
+
+```
+fdroid build --all
+fdroid publish
+```
+
+Metadata documentation : https://f-droid.org/en/docs/Build_Metadata_Reference/
+
