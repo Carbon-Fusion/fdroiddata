@@ -4,7 +4,7 @@ License: GPL-3.0-only
 AuthorName: Team Tusky
 AuthorEmail: tusky@connyduck.at
 WebSite: https://tusky.app/
-SourceCode: https://github.com/tuskyapp/Tusky
+SourceCode: https://github.com/tuskyapp/Tusky;branches=develop
 IssueTracker: https://github.com/tuskyapp/Tusky/issues
 Translation: https://weblate.tusky.app/projects/tusky/
 Changelog: https://github.com/tuskyapp/Tusky/releases
@@ -13,19 +13,17 @@ OpenCollective: tusky
 Name: Tusky Green Nightly
 AutoName: Tusky Green
 
-Description: >-
-    "Tusky is a lightweight client for Mastodon, a free and open-source social network server.
-    • Material Design
-    • Most Mastodon APIs implemented
-    • Multi-Account support
-    • Dark and light theme with the possibility to auto-switch based on the time of day
-    • Drafts - compose toots and save them for later
-    • Choose between different emoji styles
-    • Optimized for all screen sizes
-    • Completely open-source - no non-free dependencies like Google services"
-
 RepoType: git
 Repo: https://github.com/tuskyapp/Tusky
+
+Builds:
+  - versionName: '21.0'
+    versionCode: 100
+    commit: 9e66ccf4
+    subdir: app
+    gradle:
+      - green
+    novcheck: true
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^v[\d.]+$
