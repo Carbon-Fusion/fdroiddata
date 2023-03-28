@@ -10,7 +10,10 @@ Translation: https://weblate.tusky.app/projects/tusky/
 Changelog: https://github.com/tuskyapp/Tusky/releases
 OpenCollective: tusky
 
-AutoName: Tusky
+Name: Tusky Blue Nightly
+AutoName: Tusky Blue
+
+Description: Tusky blue
 
 RepoType: git
 Repo: https://github.com/tuskyapp/Tusky
