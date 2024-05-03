@@ -16,17 +16,8 @@ AutoName: Tusky Green
 RepoType: git
 Repo: https://github.com/tuskyapp/Tusky
 
-Builds:
-  - versionName: '21.0'
-    versionCode: 100
-    commit: 9e66ccf4
-    subdir: app
-    gradle:
-      - green
-    novcheck: true
-
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^v[\d.]+$
 UpdateCheckData: app/build.gradle|versionCode\s(\d+)|.|versionName\s"([\d.]+)"
-CurrentVersion: '21.0'
-CurrentVersionCode: 100
+CurrentVersion: '25.0'
+CurrentVersionCode: 200
